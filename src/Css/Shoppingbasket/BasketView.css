@@ -96,26 +96,29 @@
 /* 하단 */
 .bv-footer {
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .bv-footer .bv-btt {
   background-color: #47647c;
-  width: 85%;
+  width: 400px;
   height: 50px;
   font-size: 17px;
-  /* font-weight: bold; */
+  font-weight: 700;
+  border-radius: 8px;
 }
 .bv-footer .bv-btt:focus {
   background-color: #47647c;
-  width: 85%;
+  width: 400px;
   height: 50px;
   font-size: 17px;
-  /* font-weight: bold; */
+  font-weight: 700;
+  border-radius: 8px;
 }
 .bv-footer .bv-btt:hover {
   background-color: #47647c;
-  width: 85%;
+  width: 400px;
   height: 50px;
   font-size: 17px;
-  /* font-weight: bold; */
+  font-weight: 700;
+  border-radius: 8px;
 }

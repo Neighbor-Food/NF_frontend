@@ -14,6 +14,7 @@ import MyPosts from "./Js/Meeting/MyPosts";
 import Login from "./Js/Member/Login";
 import SignUp from "./Js/Member/SignUp";
 import MyPage from "./Js/Member/MyPage";
+import Basket from "./Js/Shoppingbasket/Basket";
 function App() {
   return (
     <BrowserRouter>
@@ -30,9 +31,10 @@ function App() {
         <Route path="/myposts" element={<MyPosts />} />
 
         <Route path="/menuview" element={<MenuView />} />
-        <Route path="/menudetail/:resname/:foodname" element={<MenuDetail />} />
-        <Route path="/basketviewhost" element={<BasketViewHost />} />
-        <Route path="/basketview" element={<BasketView />} />
+        <Route path="/menudetail/:resname/:foodid" element={<MenuDetail />} />
+        {/* <Route path="/basketviewhost" element={<BasketViewHost />} />
+        <Route path="/basketview" element={<BasketView />} /> */}
+        <Route path="/basket" element={<Basket />} />
       </Routes>
     </BrowserRouter>
   );
