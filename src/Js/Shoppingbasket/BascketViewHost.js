@@ -7,7 +7,6 @@ import { ListItem } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-// import Divider from "@mui/material/Divider";
 import "../../Css/Shoppingbasket/BasketView.css";
 function BasketViewHost() {
   const [title, setTitle] = useState("장바구니 조회");
@@ -139,7 +138,6 @@ function BasketViewHost() {
           <ListItem
             id={user.id}
             key={user.id}
-            // style={{ margin: "0px 10px", padding: "0px" }}
             alignItems="flex-start"
             secondaryAction={
               user.isHost ? (
@@ -154,7 +152,6 @@ function BasketViewHost() {
                       color: user.confirmed ? "white" : "#FFFF00",
                       fontSize: "12px",
                       width: 90,
-
                       lineHeight: "32px",
                       padding: 2,
                       margin: 6,
@@ -185,60 +182,25 @@ function BasketViewHost() {
               )
             }
           >
-            {/* <div> */}
-
             {/* user정보 */}
-            <div
-              className="userinfo"
-              // style={{ margin: "10px", padding: "10px" }}
-            >
+            <div className="userinfo">
               <div className="top">
-                <AccountCircleIcon
-                  className="bvicon"
-                  // style={{ fontSize: "50px" }}
-                />
-                <p
-                  className="p"
-                  // style={{
-                  //   fontSize: "15px",
-                  //   fontWeight: "700",
-                  //   marginLeft: "6px",
-                  // }}
-                >
+                <AccountCircleIcon className="bvicon" />
+                <p className="p">
                   {user.isHost && user.id == myInfo.id
                     ? user.name.charAt(0) + "**" + "(나: 방장)"
                     : user.name.charAt(0) + "**"}
                 </p>
               </div>
               {user.menulist.map((menu, idx) => (
-                <p
-                  className="mqp"
-                  // style={{
-                  //   fontSize: "15px",
-                  //   fontWeight: "700",
-                  //   display: "flex",
-                  //   flexDirection: "row",
-                  //   margin: "5px",
-                  // }}
-                >
+                <p className="mqp">
                   {menu.name} {menu.quantity}개
                 </p>
               ))}
 
-              <p
-                className="pp"
-                // style={{
-                //   fontSize: "12px",
-
-                //   margin: "5px",
-                // }}
-              >
-                총 가격: {user.totalPrice}원
-              </p>
+              <p className="pp">총 가격: {user.totalPrice}원</p>
             </div>
-            {/* </div> */}
           </ListItem>
-          {/* <Divider className="divider" variant="middle" /> */}
         </>
       ))}
     </List>
@@ -272,7 +234,6 @@ function BasketViewHost() {
 
       {userlistitems}
 
-      {/* <hr /> */}
       <div className="bv-footer">
         <Stack
           direction="row"

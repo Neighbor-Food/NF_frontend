@@ -99,7 +99,7 @@ function MenuView() {
     window.location.href = `/menudetail/${res.name}/${item.id}`;
   };
   const basketViewFunc = () => {
-    window.location.href = "/basketviewhost";
+    window.location.href = "/basket";
   };
   var menulistitems = menulist.length > 0 && (
     <List className="list">
@@ -114,7 +114,6 @@ function MenuView() {
               detailFood(item);
             }}
             className="listitem"
-            // style={{ margin: "0px 10px" }}
           >
             {/* 아바타 */}
             <ListItemAvatar>
@@ -123,7 +122,6 @@ function MenuView() {
                 alt={item.name}
                 src={item.src}
                 className="avatar"
-                // sx={{ height: "90px", width: "90px", borderRadius: "8px" }}
               />
             </ListItemAvatar>
             {/* 텍스트 */}
@@ -147,7 +145,6 @@ function MenuView() {
                 </React.Fragment>
               }
               className="listitemtext"
-              // style={{ margin: "10px" }}
             />
           </ListItem>
         </>
@@ -172,7 +169,7 @@ function MenuView() {
           gap={1}
         >
           <Button className="btt" variant="contained" onClick={basketViewFunc}>
-            <p className="text">공동 장바구니 보기</p>
+            공동 장바구니 보기
           </Button>
         </Stack>
       </div>

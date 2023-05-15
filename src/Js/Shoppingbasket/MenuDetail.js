@@ -4,7 +4,6 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
-// import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { useParams } from "react-router-dom";
 import "../../Css/Shoppingbasket/MenuDetail.css";
 function MenuDetail() {
@@ -52,13 +51,10 @@ function MenuDetail() {
   return (
     <div className="mdcontainer">
       <Nav title={title} />
-      {/* <div className="rescontainer">
-        <p className="mdtext">{resname}</p>
-      </div> */}
-      {/* <hr /> */}
+
       <div className="md-header">
         <p className="mdtext">{resname}</p>
-        {/* <hr /> */}
+
         <img className="image" alt={foodid} src={food.src} />
         <div className="fnbox">
           <p>{food.name}</p>

@@ -8,13 +8,12 @@ import Check from "./Js/Restaurant/Check.js";
 import NotFound from "./Js/NotFound/NotFound.js";
 import MenuView from "./Js/Shoppingbasket/MenuView";
 import MenuDetail from "./Js/Shoppingbasket/MenuDetail";
-import BasketViewHost from "./Js/Shoppingbasket/BascketViewHost";
-import BasketView from "./Js/Shoppingbasket/BasketView";
 import MyPosts from "./Js/Meeting/MyPosts";
 import Login from "./Js/Member/Login";
 import SignUp from "./Js/Member/SignUp";
-import MyPage from "./Js/Member/MyPage";
 import Basket from "./Js/Shoppingbasket/Basket";
+import MyPage from "./Js/Member/MyPage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -32,8 +31,6 @@ function App() {
 
         <Route path="/menuview" element={<MenuView />} />
         <Route path="/menudetail/:resname/:foodid" element={<MenuDetail />} />
-        {/* <Route path="/basketviewhost" element={<BasketViewHost />} />
-        <Route path="/basketview" element={<BasketView />} /> */}
         <Route path="/basket" element={<Basket />} />
       </Routes>
     </BrowserRouter>

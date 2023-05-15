@@ -21,6 +21,7 @@ function SignUp() {
     const password = data.get("password");
     const moneyBank = data.get("money-bank");
     const moneyAccount = data.get("money-account");
+    console.log(moneyAccount);
     signup({
       name: username,
       email: email,

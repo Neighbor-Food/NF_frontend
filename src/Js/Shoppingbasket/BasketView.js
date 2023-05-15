@@ -6,7 +6,6 @@ import { ListItem } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import Divider from "@mui/material/Divider";
 import "../../Css/Shoppingbasket/BasketView.css";
 function BasketView() {
   //board의 아이디 넘겨받아야함
@@ -31,7 +30,7 @@ function BasketView() {
   // 분을 가져와 분값을 뺀 분을 정해주는 state
   const [second, setSecond] = useState(59 - new Date().getSeconds());
   // 초를 가져와 초값을 뺀 초를 정해주는 state
-//board의 reply list 조회하여 reply 조회
+  //board의 reply list 조회하여 reply 조회
   const userlist = [
     {
       name: "홍길동",
@@ -118,28 +117,10 @@ function BasketView() {
               )
             }
           >
-            {/* <AccountCircleIcon className="bvicon" /> */}
             <div className="userinfo">
-              {/* <Typography>
-                {user.isHost
-                  ? user.name.charAt(0) + "**" + "(방장)"
-                  : user.id == myInfo.id
-                  ? user.name.charAt(0) + "**" + "(나)"
-                  : user.name.charAt(0) + "**"}
-              </Typography> */}
               <div className="top">
-                <AccountCircleIcon
-                  className="bvicon"
-                  // style={{ fontSize: "50px" }}
-                />
-                <p
-                  className="p"
-                  // style={{
-                  //   fontSize: "15px",
-                  //   fontWeight: "700",
-                  //   marginLeft: "6px",
-                  // }}
-                >
+                <AccountCircleIcon className="bvicon" />
+                <p className="p">
                   {user.isHost
                     ? user.name.charAt(0) + "**" + "(방장)"
                     : user.id == myInfo.id
@@ -156,7 +137,6 @@ function BasketView() {
               <p className="pp">총 가격: {user.totalPrice}원</p>
             </div>
           </ListItem>
-          {/* <Divider className="divider" variant="middle" /> */}
         </>
       ))}
     </List>
@@ -190,7 +170,6 @@ function BasketView() {
 
       {userlistitems}
 
-      {/* <hr /> */}
       <div className="bv-footer">
         <Stack
           direction="row"
@@ -198,14 +177,8 @@ function BasketView() {
           justifyContent="center"
           gap={1}
         >
-          {/* <Button
-            variant="contained"
-            style={{ backgroundColor: "#47647C", width: "85%" }}
-          >
-            <p style={{ fontWeight: "bold" }}>입금완료(취소불가)</p> */}
           {/* //나의 id랑 userlist의 id랑 같은걸 찾아서 나의 status 나타내기 */}
           {/* 입금전이면 장바구니 음식을 삭제할 수 있게, 입금확인이면 취소불가 */}
-          {/* </Button> */}
         </Stack>
       </div>
     </div>

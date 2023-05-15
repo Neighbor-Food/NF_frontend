@@ -4,7 +4,7 @@ import BasketView from "./BasketView";
 import { useEffect, useState } from "react";
 function Basket() {
   const [user, setUser] = useState({ email: "", name: "" });
-  const hostemail = "12345@naver.com";
+  const hostemail = "you@naver.com";
   const [isHost, setIsHost] = useState(false);
   useEffect(() => {
     // call("/api/member/getMember", "GET", null).then((response) =>
@@ -13,7 +13,7 @@ function Basket() {
     var userEmail = localStorage.getItem("email");
     setUser({ email: userEmail });
     if (user.email === hostemail) setIsHost(true);
-  }, []);
+  }, [user.email, hostemail]);
   const content = isHost ? <BasketViewHost /> : <BasketView />;
   return content;
 }
