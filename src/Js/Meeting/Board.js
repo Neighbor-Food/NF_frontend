@@ -8,7 +8,7 @@ function Board() {
       <div className='entire'>
         <div className='header'>
           <a href="/"><span class="material-symbols-rounded">chevron_left</span></a>
-          <a href="/"><span class="material-symbols-rounded" id='basket'>shopping_basket</span></a>
+          <a href="/basketview"><span class="material-symbols-rounded" id='basket'>shopping_basket</span></a>
         </div>
         <hr />
         <div className='main'>

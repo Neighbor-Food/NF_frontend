@@ -1,18 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../../Css/Restaurant/Check.css';
 import profile from '../../Images/profile.png';
-import { call } from '../../Service/ApiService';
 
 function Check() {
-  const [list, setList] = useState([]);
-
-  useEffect(() => {
-    call("/api/restaurant/getList", "GET", null).then((response) => {
-      console.log(response);
-      // setList(list = response);
-    });
-  }, []);
-  
   return (
     <div className='check'>
       <div className='header'>

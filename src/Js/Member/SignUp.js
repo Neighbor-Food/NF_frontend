@@ -41,7 +41,7 @@ class SignUp extends React.Component {
                 id="username"
                 label="사용자 이름"
                 autoFocus
-                style={{ marginLeft: "30px" }}
+                style={{ marginLeft: "35px" }}
               />
             </Grid>
             <Grid item xs={10}>
@@ -54,7 +54,7 @@ class SignUp extends React.Component {
                 id="email"
                 label="이메일 주소"
                 autoFocus
-                style={{ marginLeft: "30px" }}
+                style={{ marginLeft: "35px" }}
               />
             </Grid>
             <Grid item xs={10}>
@@ -67,7 +67,7 @@ class SignUp extends React.Component {
                 id="password"
                 label="패스워드"
                 autoFocus
-                style={{ marginLeft: "30px" }}
+                style={{ marginLeft: "35px" }}
               />
             </Grid>
             <Grid item xs={10}>
@@ -80,7 +80,7 @@ class SignUp extends React.Component {
                 id="money-account"
                 label="계좌번호"
                 autoFocus
-                style={{ marginLeft: "30px" }}
+                style={{ marginLeft: "35px" }}
               />
             </Grid>
             <Grid item xs={12}>
