@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nav from "../../components/Nav";
+import Nav from "../../Components/Nav";
 import "../../Css/Shoppingbasket/Main.css";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";

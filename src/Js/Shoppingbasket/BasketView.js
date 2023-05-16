@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Nav from "../../components/Nav";
+import Nav from "../../Components/Nav";
 import Stack from "@mui/material/Stack";
 import List from "@mui/material/List";
 import { ListItem } from "@mui/material";

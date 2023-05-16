@@ -30,7 +30,7 @@ function Login() {
               label="이메일 주소"
               name="email"
               autoComplete="email"
-              style={{ marginLeft: "30px" }}
+              style={{ marginLeft: "35px" }}
             />
           </Grid>
           <Grid item xs={10}>
@@ -42,7 +42,7 @@ function Login() {
               label="패스워드"
               name="password"
               autoComplete="password"
-              style={{ marginLeft: "30px" }}
+              style={{ marginLeft: "35px" }}
             />
           </Grid>
           <Grid item xs={12}>

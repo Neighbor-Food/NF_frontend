@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Nav from "../../components/Nav";
+import Nav from "../../Components/Nav";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import AddIcon from "@mui/icons-material/Add";

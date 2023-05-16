@@ -3,20 +3,20 @@
   text-align: center;
   margin-bottom: 50px;
   font-weight: bold;
-  color: #47647C;
+  color: #5A9367;
   margin-top: 250px;
 }
 
 .login-button {
-  width: 331px;
-  height: 40px;
+  width: 340px;
+  padding: 10px;
   border-radius: 4px;
-  background: #47647C;
+  background: #5A9367;
   color: #fff;
   font-size: 15px;
-  font-weight: bold 900;
+  font-weight: 900;
   border: none;
-  margin-left: 30px;
+  margin-left: 35px;
   margin-bottom: 20px;
 }
 
@@ -29,13 +29,14 @@
 }
 
 .no-account {
+  margin-left: 25px;
   font-weight: 700;
-  color: #47647C;
+  color: #5A9367;
   text-decoration: none;
   vertical-align: middle;
 }
 
 .material-symbols-rounded {
-  color: #47647C;
+  color: #5A9367;
   vertical-align: middle;
 }
