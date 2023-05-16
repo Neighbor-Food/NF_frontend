@@ -22,15 +22,15 @@
   font-size: 12px;
   font-weight: 700;
   color: white;
-  background-color: #47647C;
-  border: 2px solid #47647C;
+  background-color: #5A9367;
+  border: 2px solid #5A9367;
   border-radius: 10px;
   cursor: pointer;
 }
 
 /* HOME */
 .home {
-  color: #47647C;
+  color: #5A9367;
   width: 100%;
   font-size: 12px;
   margin: auto 0;
@@ -69,7 +69,7 @@
 
 .home .type p:first-child {
   margin-left: 30px;
-  color: #47647C;
+  color: #5A9367;
 }
 
 .home .board {
@@ -78,7 +78,7 @@
   margin: 10px 20px;
   padding: 10px 20px;
   border-radius: 15px;
-  background-color: #d7e9f75d;
+  background-color: #c5e99b2c;
 }
 
 .home .board .user img {
@@ -131,7 +131,7 @@
 }
 
 .home .primary {
-  color: #47647C;
+  color: #5A9367;
   background-color: transparent;
-  border: 2px solid #47647C;
+  border: 2px solid #5A9367;
 }
